@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>路彎彎</title>
+		<meta name="Generator" content="OnSong"/>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	</head>
+	<body>
+		<style>
+			body {
+				font-size: 14pt;
+				font-family: Helvetica, Arial, sans-serif;
+			}
+			h1 {
+				display:none;
+			}
+			h2 {
+				margin: 0;
+				font-size: 21pt;
+			}
+			h3 {
+				page-break-before: auto;
+				padding-bottom:1.5em;
+				margin-bottom:0;
+			}
+			h3.nochords {
+				padding-bottom:0;
+			}
+			p {
+				margin:0;
+			}
+			#navigation {
+				display: none;
+			}
+			#pages {
+				margin-left: 50;
+				margin-right: 50;
+			}
+			.page {
+				border:solid 1px #666;
+				width: 8.5in;
+				padding: 0.75in;
+				margin: 0.75in;
+			}
+			#key, #tempo {
+				padding:0.15em;
+			}
+			.chord {
+				padding:0.15em;
+				position: absolute;
+				margin-top: -1.25em;
+				font-weight: bold;
+				z-index:-10;
+			}
+			.metadata {
+				float: right;
+				text-align:right;
+			}
+			.page p {
+				padding-bottom:1.5em;
+			}
+			.page p.nochords {
+				padding-bottom:0em;
+			}
+			@media print {
+				.page {
+					margin: 0;
+					width: 7in;
+					border: none;
+					padding: 0;
+				}
+			}
+		</style>
+		<div id="content">
+			<ul id="navigation"></ul>
+			<div id="pages">
+<style>
+  #_BE5C06F1-8F62-4E10-813C-61850A6D5273 { font-family:"Courier New", Courier, monospaced; font-size:14pt; }
+  #_BE5C06F1-8F62-4E10-813C-61850A6D5273 h2 { font-size:21pt; }
+  #_BE5C06F1-8F62-4E10-813C-61850A6D5273 .chord { font-family: "Courier"; font-size: 14.000000pt; line-height: 14.000000pt; color: #000000; background-color: #FF960080;  }
+	.chorus { font-weight: normal; padding-left: 0.000000pt; }
+</style>
+<div class="page" id="_BE5C06F1-8F62-4E10-813C-61850A6D5273">
+<div class="metadata">
+
+<div id="key">Key of Eb</div>
+
+<div id="tempo">124 BPM in 4/4</div>
+
+</div><h2>路彎彎</h2>
+<div class="author">王羽馨</div>
+<p class="nochords"><span></span></p>
+<h3><span>Intro:</span></h3>
+<p><span><span class="chord">Eb</span>路彎<span class="chord">Ab</span>彎 <span class="chord">Eb</span>路彎<span class="chord">Ab</span>彎 <span class="chord">Eb</span>路彎<span class="chord">Bb</span>彎 </span></p>
+<p class="nochords"><span></span></p>
+<h3><span>Verse 1:</span></h3>
+<p><span><span class="chord">Eb</span>路彎彎 <span class="chord">Ab</span>吹等涼風 <span class="chord">Cm</span>河壩唇也<span class="chord">Bb</span>彎彎 </span></p>
+<p><span><span class="chord">Eb</span>樹頭彎彎 <span class="chord">Ab</span>日頭烈烈 <span class="chord">Eb/G</span>頭拿昂昂 <span class="chord">Bb</span> 看樹仔葉<span class="chord">Eb</span>青青 <span class="chord">Eb</span></span></p>
+<p class="nochords"><span></span></p>
+<h3><span>Chorus:</span></h3>
+<p><span><span class="chord">Ab</span>路彎彎 <span class="chord">Ab</span> 帶我去麼該<span class="chord">Bb</span>地方 <span class="chord">Bb</span></span></p>
+<p><span><span class="chord">Ab</span>天茫茫 <span class="chord">Ab</span> 有路就<span class="chord">Bb</span>敢闖 Yea-<span class="chord">Bb</span>Yeah~</span></p>
+<p><span><span class="chord">Eb</span>走滿山崖 <span class="chord">Ab</span>走滿山崖</span></p>
+<p><span><span class="chord">Cm</span>a pakapa <span class="chord">Bb</span> 有你就不<span class="chord">Eb</span>孤單 <span class="chord">Eb</span></span></p>
+<p class="nochords"><span></span></p>
+<h3><span>Bridge:</span></h3>
+<p><span><span class="chord">Ab</span>　　<span class="chord">Eb</span>　　<span class="chord">Db</span>　　<span class="chord">Bb</span>　　<span class="chord">Bb</span>　　</span></p>
+<p class="nochords"><span></span></p>
+<p class="nochords"><span>路彎彎 蹶到高山頂 </span></p>
+<p class="nochords"><span></span></p></div></div>
+		</div>
+		<script>
+			var padding = 5;
+			var ps = document.body.getElementsByTagName("p");
+			for(var i=0;i<ps.length;i++) {
+				var p = ps[i];
+				var lastX = 0;
+				var spans = p.getElementsByTagName("span");
+				for(var j=0;j<spans.length;j++) {
+					var span = spans[j];
+					if(lastX > span.offsetLeft) {
+						span.style.left = (lastX + padding);
+						lastX = lastX + padding + span.offsetWidth;
+					} else {
+						lastX = span.offsetLeft + span.offsetWidth;
+					}
+				}
+			}
+		</script>
+	</body>
+</html>
